@@ -1,137 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teebi | 3D Product Animator</title>
   <style>
     body {
-      font-family: "Poppins", sans-serif;
-      background-color: #fdfdfd;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
       text-align: center;
-      padding: 40px 20px 10px;
-    }
-
-    header h1 {
-      font-size: 2rem;
       margin: 0;
-      letter-spacing: 1px;
+      padding: 40px;
     }
-
-    .gallery {
+    h1 {
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+    .video-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
+      justify-items: center;
     }
-
-    .video-card {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
     video {
       width: 100%;
+      max-width: 400px;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      cursor: pointer;
-      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-
-    h3 {
-      margin-top: 10px;
-      margin-bottom: 4px;
-      font-size: 1.1rem;
+    p {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #555;
     }
-
-    p.caption {
-      margin: 0;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
     footer {
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      border-top: 1px solid #eee;
-      color: #444;
-    }
-
-    a {
-      color: #444;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Teebi | 3D Product Animator</h1>
-  </header>
-
-  <section class="gallery">
-    <div class="video-card">
-      <video controls poster="">
-        <source src="lotion.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+  <h1>Teebi | 3D Product Animator</h1>
+  
+  <div class="video-container">
+    <div>
+      <video controls poster="thumbnail.jpg">
+        <source src="lotion.mp4" type="video/mp4">
       </video>
-      <h3>Lotion</h3>
-      <p class="caption">Lotion 3D Product Animation</p>
+      <p>Lotion 3D Product Animation</p>
     </div>
 
-    <div class="video-card">
-      <video controls poster="">
-        <source src="face cream.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+    <div>
+      <video controls poster="thumbnail.jpg">
+        <source src="facecream.mp4" type="video/mp4">
       </video>
-      <h3>Face Cream</h3>
-      <p class="caption">Face Cream 3D Product Animation</p>
+      <p>Face Cream 3D Product Animation</p>
     </div>
 
-    <div class="video-card">
-      <video controls poster="">
-        <source src="magnum.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+    <div>
+      <video controls poster="thumbnail.jpg">
+        <source src="magnum.mp4" type="video/mp4">
       </video>
-      <h3>Magnum</h3>
-      <p class="caption">Magnum 3D Product Animation</p>
+      <p>Magnum 3D Product Animation</p>
     </div>
 
-    <div class="video-card">
-      <video controls poster="">
-        <source src="blender jar.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+    <div>
+      <video controls poster="thumbnail.jpg">
+        <source src="blenderjar.mp4" type="video/mp4">
       </video>
-      <h3>Blender Jar</h3>
-      <p class="caption">Blender Jar 3D Product Animation</p>
+      <p>Blender Jar 3D Product Animation</p>
     </div>
 
-    <div class="video-card">
-      <video controls poster="">
-        <source src="mascara.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+    <div>
+      <video controls poster="thumbnail.jpg">
+        <source src="mascara.mp4" type="video/mp4">
       </video>
-      <h3>Mascara</h3>
-      <p class="caption">Mascara 3D Product Animation</p>
+      <p>Mascara 3D Product Animation</p>
     </div>
-  </section>
+  </div>
 
   <footer>
-    <p>📧 <a href="mailto:teebireads@gmail.com">teebireads@gmail.com</a></p>
+    <p>📩 teebireads@gmail.com</p>
   </footer>
 </body>
 </html>
